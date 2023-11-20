@@ -1,0 +1,109 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class Banking {
+
+	 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		while(true)
+		{
+		System.out.println("Do You Have An Account In our Tech Bank");	
+		System.out.println("***************************************");
+		System.out.println("1 For Yes");
+		System.out.println("2 For Create Account");
+		System.out.println(" 3 For Exit");
+		System.out.println("*******************");
+		System.out.println("Please select a option");
+		Scanner a=new Scanner (System.in);
+		int b=a.nextInt();
+		switch(b) {
+		case 1:
+			System.out.println("Please Enter Your User Id ");
+			Scanner bb=new Scanner(System.in);
+			double id=bb.nextDouble();
+			System.out.println("Please Enter Your User Password ");
+			Scanner bbb = new Scanner(System.in);
+			double pas = bbb.nextDouble();
+			if(id==1234&&pas==4321)
+			{
+				System.out.println("Your Name: Palle Vasu Goud");
+				System.out.println("Account number:098767989 ");
+				System.out.println("Bank Balance : 8900 ");
+				System.out.println("Last transaction 500 debited ");
+				System.out.println("Thank You Visit Again");
+				System.out.println("*******************");
+			}
+			else if(id==11223&&pas==11223)
+			{
+				System.out.println("Your Name: Vinay");
+				System.out.println("Account number:223345687 ");
+				System.out.println("Bank Balance : 199600 ");
+				System.out.println("Last transaction 1400 Credited ");
+				System.out.println("Thank You Visit Again");
+				System.out.println("*******************");
+			}
+			else if(id==4747&&pas==9999)
+			{
+				System.out.println("Your Name: P Prashanth");
+				System.out.println("Account number:098767564 ");
+				System.out.println("Bank Balance : 87000 ");
+				System.out.println("Last transaction 5000 Credited ");
+				System.out.println("Thank You Visit Again");
+				System.out.println("*******************");
+			}
+			else if(id==0000&&pas==0000)
+			{
+				System.out.println("Your Name: Manohar");
+				System.out.println("Account number:0987546 ");
+				System.out.println("Bank Balance : 75600 ");
+				System.out.println("Last transaction 23400 Credited ");
+				System.out.println("Thank You Visit Again");
+				System.out.println("*******************");
+			}
+			else if(id==1122&&pas==1122)
+			{
+				System.out.println("Your Name: Akshay");
+				System.out.println("Account number:22334567 ");
+				System.out.println("Bank Balance : 175600 ");
+				System.out.println("Last transaction 2400 Credited ");
+				System.out.println("Thank You Visit Again");
+				System.out.println("*******************");
+			}
+			else
+			{
+				System.out.println("Plese cheak user name and password");	
+				System.out.println("If You Dont Have An Account Please Create A New Account");
+				System.out.println("*******************");
+			}
+			break;
+		case 2:
+			System.out.println("Welcome To You Our Tech Bank");
+			System.out.println("Please Enter Your first Name:");
+			Scanner cc=new Scanner(System.in);
+			String fname=cc.next();
+			System.out.println("Please Enter Your second Name:");
+			Scanner ccc=new Scanner(System.in);
+			String lname=ccc.next();
+			System.out.println("Please Enter Your Adhar card number:");
+			Scanner aa=new Scanner(System.in);
+			long adhar=aa.nextLong();
+			System.out.println("Your Name:" +fname+" "+lname);
+			System.out.println("Your Adhar Number is:" +adhar);
+			System.out.println("Your Account Was Sucessfully Created");
+			System.out.println("*******************");
+			System.out.println("Thank You Visit Again");
+			System.out.println("*******************");
+			break;
+		case 3:
+			System.exit(0);
+			
+		default:
+			System.out.println("Please Cheak Your Input");
+			System.out.println("*******************");
+		}
+		
+	}
+
+}
+}
