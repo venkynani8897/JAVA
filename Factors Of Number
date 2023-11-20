@@ -1,0 +1,22 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class FactorsOfNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		System.out.println("enter any number to find factors");
+		Scanner v=new Scanner(System.in);
+		a=v.nextInt();
+		System.out.println("The Factors Are");
+		for (int i=1;i<=a;i++) {
+			if(a%i==0) {
+				System.out.println(i);
+			}
+		}
+		
+		
+
+	}
+
+}
