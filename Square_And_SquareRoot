@@ -1,0 +1,19 @@
+package importjava.util.scanner;
+
+import java.util.Scanner;
+
+public class Square_And_SquareRoot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		System.out.println("enter Any Number To Cheak Square And Square Root");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		int b=a*a;
+	
+		System.out.println("Square Of A Given Number"+":"+b);
+		System.out.println("Square Root Of A Given Number"+":"+ (Math.sqrt(a)));
+	}
+
+}
