@@ -1,0 +1,24 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class Fibonic_Series {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=0,b=1,t;
+	
+		System.out.println("Enter Any Number To Find Fibonicc series");
+		Scanner c=new  Scanner(System.in);
+		int n=c.nextInt();
+		
+		for  ( int i=0;i<=n;i++)
+		{
+			t=a+b;
+			a=b;
+			b=t;
+			System.out.println(t);
+			
+		}
+	
+	}
+
+}
