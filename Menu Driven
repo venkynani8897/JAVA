@@ -1,0 +1,66 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+
+public class MenuDriven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		while(true)
+		{
+		System.out.println("1 For Addition");
+		System.out.println("2 For Subtraction");
+		System.out.println("3 For Muliplication");
+		System.out.println("4 For Divison");
+		System.out.println("5 For exit");
+		System.out.println("Select Your Choice");
+		Scanner b =new Scanner(System.in);
+		int  a=b.nextInt();
+		switch(a) {
+		case 1:
+			System.out.println("Enter Your 1st Number");
+			Scanner c =new Scanner(System.in);
+			int d=c.nextInt();
+			System.out.println("Enter Your 2nd Number");
+			Scanner e =new Scanner(System.in);
+			int f=e.nextInt();
+			int g=d+f;
+			System.out.println("The sum is:" +g);
+			break;
+		case 2:
+			System.out.println("Enter Your 1st Number");
+			Scanner i =new Scanner(System.in);
+			int h=i.nextInt();
+			System.out.println("Enter Your 2nd Number");
+			Scanner j =new Scanner(System.in);
+			int k=j.nextInt();
+			int l=h-k;
+			System.out.println("The Subtraction i is:" +l);
+			break;
+		case 3:
+			System.out.println("Enter Your 1st Number");
+			Scanner ii =new Scanner(System.in);
+			int m=ii.nextInt();
+			System.out.println("Enter Your 2nd Number");
+			Scanner jj =new Scanner(System.in);
+			int n=jj.nextInt();
+			int o=m*n;
+			System.out.println("The Multiplication i is:" +o);
+			break;
+		case 4:
+			System.out.println("Enter Your 1st Number");
+			Scanner iii =new Scanner(System.in);
+			int p=iii.nextInt();
+			System.out.println("Enter Your 2nd Number");
+			Scanner jjj =new Scanner(System.in);
+			int q=jjj.nextInt();
+			int r=p/q;
+			System.out.println("The  Division is:" +r);
+			break;
+		case 5:
+			System.exit(0);
+		}
+		}
+
+	}
+
+}
