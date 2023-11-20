@@ -8,7 +8,7 @@ int a,b, c=0,d=0;
 Scanner s=new Scanner(System.in);
 System.out.println("Enter any number: ");
 b=s.nextInt();
-a=b;
+c=b;
 while(b>0)
 {
 a=b%10;
