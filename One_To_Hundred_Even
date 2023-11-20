@@ -1,0 +1,15 @@
+package importjava.util.scanner;
+
+public class One_To_Hundread_Even {
+
+	public static void main(String[] args) {
+		// TODO 
+		System.out.println("The Even Numbers Are");
+		for(int i=0;i<=100;i++) {
+			
+			if(i%2==0)
+				System.out.println(i);
+		}
+	}
+
+}
