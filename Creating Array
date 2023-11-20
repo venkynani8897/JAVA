@@ -1,0 +1,24 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class TestingArray{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		System.out.println("how many element do you want");
+		Scanner dd =new Scanner(System.in); 
+		a=dd.nextInt();
+		System.out.println("enter an array");
+		
+		Scanner sc=new Scanner(System.in);
+		int ps []=new int[a];
+		
+		for(int i=0;i<=a;i++)
+		{
+			ps[i]=sc.nextInt();
+			System.out.println(ps[i]);
+		}
+		
+	}
+
+}
