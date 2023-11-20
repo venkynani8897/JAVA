@@ -1,0 +1,20 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class Even_Or_Odd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		System.out.println("enter Any Number To Cheak Even Or Odd");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		if(a%2==0)
+		{
+			System.out.println(a+""+"Is A Even Number");
+		}
+		else
+		{System.out.println("It Is A Odd Number");
+	}
+
+}
+}
