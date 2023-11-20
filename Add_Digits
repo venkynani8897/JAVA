@@ -1,0 +1,24 @@
+package importjava.util.scanner;
+
+import java.util.Scanner;
+
+public class Add_Digits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a,b=0;
+		System.out.println("enter Any Number To Add Digits");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		if(a>10) {
+			while(a>0)
+			{
+				b=b+a%10;
+				a=a/10;
+				
+			}
+			System.out.println("The Results is " +b);
+		}	
+	}
+
+}
