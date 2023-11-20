@@ -1,0 +1,19 @@
+package importjava.util.scanner;
+
+import java.util.Scanner;
+
+public class Area_Of_Circle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int radius ;
+		double pi=3.14,area;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter The   Radius The Of Circle: ");
+		radius=s.nextInt();
+		area=pi*radius*radius;
+		System.out.println(" The Area The Of Circle Is: "+area);
+	}
+	}
+
