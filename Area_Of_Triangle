@@ -1,0 +1,21 @@
+package importjava.util.scanner;
+
+import java.util.Scanner;
+
+public class Area_Of_Triangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int width,height,area;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter The Height Of The Triangle: ");
+		height=s.nextInt();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Width Of The Triangle: ");
+		width=sc.nextInt();
+		area=(1*height*width);
+		System.out.println("The Area Of The Triangle Is: "+""+area);
+	}
+
+}
