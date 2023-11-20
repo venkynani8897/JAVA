@@ -1,0 +1,90 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class PowerBill {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Hyderbad Power Bill");
+		System.out.println("Please Enter Your Used Units");
+		Scanner aa=new Scanner(System.in);
+		int a=aa.nextInt();
+		if(a<500)
+		{
+		if(a<=100)
+		{
+		  int b=a*1;
+		  System.out.println("Units Consumed"+"    "+a +"units");
+		  System.out.println("Power Cost is"+" "+b);
+		  System.out.println("Total Bill is"+" "+b);
+		}
+		else if(a>100&&a<=200) {
+			 double c=a*2.25;
+			  System.out.println("Units Used"+"    "+a +"units");
+			  System.out.println("Power Cost is"+" "+c);
+			  System.out.println("Total Bill is"+" "+c);
+		}
+		else if(a>200&&a<=400) {
+			 double d=a*4.50;
+			  System.out.println("Units Used"+"    "+a +"units");
+			  System.out.println("Power Cost is"+" "+d);
+			  System.out.println("Total Bill is"+" "+d);
+		}
+		else if(a>400&&a<=500) {
+			 double vd=a*6;
+			  System.out.println("Units Used"+"    "+a +"units");
+			  System.out.println("Power Cost is"+" "+vd);
+			  System.out.println("Total Bill is"+" "+vd);
+		}
+		
+	}
+		else if(a>500)
+		{
+			if(a<=100)
+			{
+			  int bb=a*1;
+			  System.out.println("Units Consumed"+"    "+a +"units");
+			  System.out.println("Power Cost is"+" "+bb);
+			  System.out.println("Total Bill is"+" "+bb);
+			}
+			else if(a>100&&a<=400) {
+				 double ccc=a*4.50;
+				  System.out.println("Units Used"+"    "+a +"units");
+				  System.out.println("Power Cost is"+" "+ccc);
+				  System.out.println("Total Bill is"+" "+ccc);
+			}
+			else if(a>400&&a<=500) {
+				 double dd=a*6;
+				  System.out.println("Units Used"+"    "+a +"units");
+				  System.out.println("Power Cost is"+" "+dd);
+				  System.out.println("Total Bill is"+" "+dd);
+			}
+			else if(a>500&&a<=600) {
+				 double ds=a*8;
+				  System.out.println("Units Used"+"    "+a +"units");
+				  System.out.println("Power Cost is"+" "+ds);
+				  System.out.println("Total Bill is"+" "+ds);
+			}
+			else if(a>600&&a<=800) {
+				 double ds=a*9;
+				  System.out.println("Units Used"+"    "+a +"units");
+				  System.out.println("Power Cost is"+" "+ds);
+				  System.out.println("Total Bill is"+" "+ds);
+			}
+			else if(a>800&&a<1000) {
+				 double ds=a*10;
+				  System.out.println("Units Used"+"    "+a +"units");
+				  System.out.println("Power Cost is"+" "+ds);
+				  System.out.println("Total Bill is"+" "+ds);
+			}
+			else if(a<=1000) {
+				 double ds=a*11;
+				  System.out.println("Units Used"+"    "+a +"units");
+				  System.out.println("Power Cost is"+" "+ds);
+				  System.out.println("Total Bill is"+" "+ds);
+			}
+			
+			
+		}
+	}
+}
