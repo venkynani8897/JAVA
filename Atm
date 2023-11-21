@@ -1,0 +1,131 @@
+package importjava.util.scanner;
+import java.util.Scanner;
+public class Atm {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Please Insert Your Card");
+		   System.out.println("please ATM Pin");
+	        int pin;
+	        Scanner b=new Scanner(System.in);
+	        pin=b.nextInt();
+	        int bal = 45000;
+	        if(pin==1234)
+	        {
+	        	 System.out.println("1 For Banking");
+			        System.out.println("2 For Withdraw ");
+			        System.out.println("3 For Balance Enquiry ");
+			        System.out.println("4 For  Statement ");
+			        System.out.println("5 for cancel");
+	        	System.out.println("please select Option");
+		        int input;
+		        Scanner a=new Scanner(System.in);
+		        input=a.nextInt();
+		   	
+	        if(input==1){
+	         banking();
+	        }
+	        else if(input==2){
+	             withdraw();
+	        }
+	        else if(input==3)
+	        {
+	             balance_enquiry();
+	        }
+	        else if(input==4){
+	            statement();
+	        }
+	        }
+	        else {
+	        	System.out.println("plese enter correct pin");
+	        	
+	        }
+	  
+}
+
+	private static void statement() {
+		// TODO Auto-generated method stub
+		
+		 System.out.println("Debited by upiid to *@ybl t0 500");
+	        System.out.println("999 Credited from bank ");
+	        System.out.println("700 debited through ATM in hyderbad");
+	        System.out.println("32 debited SMS charges");
+	        System.out.println("8000 transfered through upi");
+	        System.out.println("Thank You Visit Again");
+	        System.out.println("*********************");
+	    
+	}
+
+	private static void balance_enquiry() {
+		// TODO Auto-generated method stub
+		 System.out.println("Your Account NUmber is **1324");
+	        System.out.println("Your Balance is 45000");
+	        System.out.println("Thank You Visit Again");
+	        System.out.println("*********************");
+		
+	}
+
+	private static void withdraw() {
+		// TODO Auto-generated method stub
+		 System.out.println("Enter amount");
+		 int amount;
+		  Scanner aa=new Scanner(System.in);
+	        amount=aa.nextInt();
+	        System.out.println(amount+":"+"withdraw sucessfully");
+	        System.out.println("Please Collect Cash");
+	         int bal=45000;
+			int rem=bal-amount;
+	        System.out.println("Remaining Balence is"+":"+rem);
+	        System.out.println("Thank You Visit Again");
+	        System.out.println("*********************");
+	}
+
+	private static void banking() {
+		// TODO Auto-generated method stub
+		 System.out.println(" 1: For Pin Change");
+	        System.out.println("2: For Sms Alert");
+	        System.out.println("2: Please Select A Option");
+	        int option;
+			  Scanner aa=new Scanner(System.in);
+		        option=aa.nextInt();
+		        switch(option) {
+		        case 1:
+		        {
+		        	 System.out.println("Please Enter Your Old pin");
+		        	 int pas;
+		        	 Scanner aaa=new Scanner(System.in);
+				      pas=aaa.nextInt();
+		        	 
+		        	 if(pas==1234)
+		        	 {
+		        		 System.out.println("Please Enter Your New pin");
+			        	 int neww;
+			        	 Scanner ab=new Scanner(System.in);
+					      neww=ab.nextInt();
+		        		 System.out.println("Your Pin Was Sucesfully Updated");
+		        		 System.out.println("Thank You Visit Again");
+		     	        System.out.println("*********************");
+
+		        	 }
+		        	 break;
+		        }
+		        case 2:
+		        {
+		        	System.out.println("Please Enter Your Mobile Number for Sms Alert");
+		        	 int num;
+		        	 Scanner aaa=new Scanner(System.in);
+				      num=aaa.nextInt();
+			        	System.out.println(" Your Mobile Number Is Sucesfully Updated ");
+			            System.out.println("Thank You Visit Again");
+				        System.out.println("*********************");
+		        break;
+		        }
+		        	default:
+		        	     System.out.println("Please Enter Correct Input");
+		     	        
+		        }
+		       
+	}
+	}
+
+
